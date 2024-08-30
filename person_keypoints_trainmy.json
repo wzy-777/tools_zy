@@ -1,0 +1,210 @@
+{
+    "version": "5.5.0",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "person",
+            "points": [
+                [
+                    12.372549019607845,
+                    165.92156862745097
+                ],
+                [
+                    502.56862745098044,
+                    1020.8235294117646
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "1",
+            "points": [
+                [
+                    267.27450980392166,
+                    214.94117647058826
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "2",
+            "points": [
+                [
+                    172.17647058823536,
+                    316.9019607843137
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "3",
+            "points": [
+                [
+                    357.47058823529403,
+                    311.01960784313724
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "4",
+            "points": [
+                [
+                    105.50980392156862,
+                    438.47058823529414
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "5",
+            "points": [
+                [
+                    417.27450980392166,
+                    453.17647058823536
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "6",
+            "points": [
+                [
+                    38.84313725490199,
+                    545.3333333333334
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "7",
+            "points": [
+                [
+                    481.9803921568629,
+                    576.7058823529412
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "8",
+            "points": [
+                [
+                    199.62745098039215,
+                    524.7450980392157
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "9",
+            "points": [
+                [
+                    322.17647058823525,
+                    530.6274509803922
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "10",
+            "points": [
+                [
+                    186.88235294117646,
+                    782.5882352941177
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "11",
+            "points": [
+                [
+                    343.7450980392158,
+                    823.7647058823529
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "12",
+            "points": [
+                [
+                    163.3529411764706,
+                    1013.9607843137255
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "13",
+            "points": [
+                [
+                    336.88235294117646,
+                    1015.921568627451
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        }
+    ],
+    "imagePath": "20240805152733382_B_小腿内侧左Metaknives.bmp",
+    "imageData": null,
+    "imageHeight": 1024,
+    "imageWidth": 512
+}
