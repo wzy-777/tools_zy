@@ -1,4 +1,4 @@
-from tools_wzy import yolo_need
+from tools_zy_bak import yolo_need
 
 
 # 从txt中获取单一类，重命名类序号（默认修改为0）
@@ -23,12 +23,14 @@ cs = {0: 'FJ', 1: 'person', 2: 'cone', 3: 'KTC', 4: 'QYC', 5: 'CSC', 6: 'PTC', 7
 # 替换xml文件中的类名
 # ch = ['金属刀']
 # pinyin = ['jinshudao']
-ch = ['手机', '碟形爆炸物', '粉末爆炸物', '矩形爆炸物', '陶瓷刀', '金属刀', '打火机', '液体', '子弹', '枪', '录音笔', '方形录音笔',
-      '小螺丝刀', '指甲刀', '注射器', '麻绳', '扳手', '烟盒', '纸币', '金属U盘', '塑料U盘', '细绳', '摄像头', 'fenmo', 'juxing', 'diexing']
-pinyin = ['shouji', 'diexingbaozhawu', 'fenmobaozhawu', 'juxingbaozhawu', 'taocidao', 'jinshudao', 'dahuoji', 'yeti', 'zidan', 'qiang', 'luyinbi', 'fangxingluyinbi',
-          'xiaoluosidao', 'zhijiadao', 'zhusheqi', 'masheng', 'banshou', 'yanhe', 'zhibi', 'jinshuUpan', 'suliaoUpan', 'xisheng', 'shexiangtou', 'fenmobaozhawu', 'juxingbaozhawu', 'diexingbaozhawu']
-xml_folder = r"D:\Zhiyuan\图片采集\data\外包采集图像\ok\Annotations_bak"
-output_folder = r"D:\Zhiyuan\图片采集\data\外包采集图像\ok\Annotations_bak"
+# ch = ['手机', '碟形爆炸物', '粉末爆炸物', '矩形爆炸物', '陶瓷刀', '金属刀', '打火机', '液体', '子弹', '枪', '录音笔', '方形录音笔',
+#       '小螺丝刀', '指甲刀', '注射器', '麻绳', '扳手', '烟盒', '纸币', '金属U盘', '塑料U盘', '细绳', '摄像头', 'fenmo', 'juxing', 'diexing']
+# pinyin = ['shouji', 'diexingbaozhawu', 'fenmobaozhawu', 'juxingbaozhawu', 'taocidao', 'jinshudao', 'dahuoji', 'yeti', 'zidan', 'qiang', 'luyinbi', 'fangxingluyinbi',
+#           'xiaoluosidao', 'zhijiadao', 'zhusheqi', 'masheng', 'banshou', 'yanhe', 'zhibi', 'jinshuUpan', 'suliaoUpan', 'xisheng', 'shexiangtou', 'fenmobaozhawu', 'juxingbaozhawu', 'diexingbaozhawu']
+ch = ['fenmo', 'juxing', 'diexing']
+pinyin = ['fenmobaozhawu', 'juxingbaozhawu', 'diexingbaozhawu']
+xml_folder = r"D:\Zhiyuan\图片采集\data\外包采集图像\赵恩博 身高175 体重83_ok - 副本"
+output_folder = r"D:\Zhiyuan\图片采集\data\外包采集图像\赵恩博 身高175 体重83_ok - 副本"
 yolo_need.replace_labelname(xml_folder, old_names=ch, new_names=pinyin, output_folder=output_folder)
 
 # 替换xml文件中的类名

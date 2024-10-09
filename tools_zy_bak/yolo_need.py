@@ -316,28 +316,7 @@ def merge_multi_classes_label_xml(image_path, xmls_folder_list, output_folder, s
     f.close()
 
 
-def find_imgs_with_xml(xmls_folder, xml_path, out_folder, image_ext='jpg', method='copy'):
-    if not os.path.exists(out_folder):
-        os.makedirs(out_folder)
-    fname = os.path.basename(xml_path)
-    xml_path = os.path.join(xmls_folder, fname[0:-3] + image_ext)
-    xml_to_path = os.path.join(out_folder, fname[0:-3] + image_ext)
-    if method == 'copy':
-        shutil.copy(xml_path, xml_to_path)
-    elif method == 'move':
-        shutil.move(xml_path, xml_to_path)
 
-def find_xmls_with_img(image_folder, imgs_path, out_folder, xml_ext='xml', method='copy'):
-    if not os.path.exists(out_folder):
-        os.makedirs(out_folder)
-    fname = os.path.basename(imgs_path)
-    # print(fname[0:-3])
-    img_path = os.path.join(image_folder, fname[0:-3] + xml_ext)
-    img_to_path = os.path.join(out_folder, fname[0:-3] + xml_ext)
-    if method == 'copy':
-        shutil.copy(img_path, img_to_path)
-    elif method == 'move':
-        shutil.move(img_path, img_to_path)
 
 def txt2xml(txtpath, picfolder, dict, xmlfolder, element_folder="xxx_folder"):  # 读取txt路径，xml保存路径，数据集图片所在路径
     if not os.path.exists(xmlfolder):
@@ -432,34 +411,6 @@ def txt2xml(txtpath, picfolder, dict, xmlfolder, element_folder="xxx_folder"):  
         print(os.path.join(xmlfolder, name[0:-4] + ".xml"))
         xmlBuilder.writexml(f, indent='\t', newl='\n', addindent='\t', encoding='utf-8')
         f.close()
-
-
-# def replace_labelname(xml_folder, old_name, new_name):
-#     files = glob.glob(os.path.join(xml_folder, "*.xml"))
-#     for file in files:
-#         print(file)
-#         with fileinput.FileInput(file, inplace=True) as f:
-#             for line in f:
-#                 print(line.replace(old_name, new_name), end='')
-
-# def replace_labelname(xml_folder, old_name, new_name, output_folder=None):
-#     # 遍历xml_folder下所有xml文件
-#     for file_name in os.listdir(xml_folder):
-#         if file_name.endswith('.xml'):
-#             xml_file = os.path.join(xml_folder, file_name)
-#             tree = ET.parse(xml_file)
-#             root = tree.getroot()
-#             for obj in root.findall('object'):
-#                 name = obj.find('name').text
-#                 if name == old_name:
-#                     obj.find('name').text = new_name
-#                     print(name + '->' + obj.find('name').text)
-#             if output_folder is None:
-#                 tree.write(xml_file, xml_declaration=True, encoding='utf-8')
-#             else:
-#                 if not os.path.exists(output_folder):
-#                     os.makedirs(output_folder)
-#                 tree.write(os.path.join(output_folder, file_name), xml_declaration=True, encoding='utf-8')
 
 
 def replace_labelname(xml_folder, old_names, new_names, output_folder=None):

@@ -83,10 +83,12 @@ if __name__ == '__main__':
     # }
     # ch = ['手机', '碟形爆炸物', '粉末爆炸物', '矩形爆炸物', '陶瓷刀', '金属刀', '打火机', '液体', '子弹', '枪', '录音笔', '方形录音笔', '小螺丝刀', '指甲刀', '注射器', '麻绳', '扳手', '烟盒', '纸币', '金属U盘', '塑料U盘', '细绳', '摄像头']
 
-    pinyin = ['shouji', 'diexingbaozhawu', 'fenmobaozhawu', 'juxingbaozhawu', 'taocidao', 'jinshudao', 'dahuoji', 'yeti', 'zidan', 'qiang', 'luyinbi', 'fangxingluyinbi', 'xiaoluosidao', 'zhijiadao', 'zhusheqi', 'masheng', 'banshou', 'yanhe', 'zhibi', 'jinshuUpan', 'suliaoUpan', 'xisheng', 'shexiangtou']
+    pinyin = ['tou', 'shouji', 'diexingbaozhawu', 'fenmobaozhawu', 'juxingbaozhawu', 'taocidao', 'jinshudao', 'dahuoji', 'yeti', 'zidan', 'qiang', 'luyinbi', 'fangxingluyinbi', 'xiaoluosidao', 'zhijiadao', 'zhusheqi', 'masheng', 'banshou', 'yanhe', 'zhibi', 'Upan', 'xisheng', 'shexiangtou']
     category_dict = {pinyin[i]: i for i in range(len(pinyin))}
     print(len(pinyin))
-    voc_root = "/home/licheng/data/things/20240823/Annotations"
-    img_root = "/home/licheng/data/things/20240823/images"
-    save_root = "/home/licheng/data/things/20240823/labels"
+    voc_root = "/data/things/20240823/xml"
+    img_root = "/data/things/20240823/bmp"
+    save_root = "/home/wangzhiyuan/data/things/20240823/labels"
     make_yolo_from_voc(voc_root, save_root, img_root, category_dict)
+    
+    
