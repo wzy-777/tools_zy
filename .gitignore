@@ -1,8 +1,0 @@
-__pycache__/
-.gitignore
-.git/
-.pypirc
-pubic.py
-self.txt
-setup.cfg
-setup.py
