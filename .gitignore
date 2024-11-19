@@ -1,0 +1,7 @@
+__pycache__/
+.git/
+.pypirc
+pubic.py
+self.txt
+setup.cfg
+setup.py
