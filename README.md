@@ -36,7 +36,7 @@ tz.split_classifid_images(img_folder, out_folder, (0.8, 0.2, 0), format=".bmp")
 
 ### License
 
-[MIT](https://github.com/pythonml/douyin_image/blob/master/LICENSE)
+[MIT](https://github.com/wzy-777/tools_zy/blob/main/LICENSE)
 
 
 [version-badge]:   https://img.shields.io/badge/version-0.1-brightgreen.svg
