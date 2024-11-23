@@ -1,7 +1,7 @@
-# tools_zy [![Version][version-badge]][version-link] ![MIT License][license-badge]
+# tools_zy[![Version][version-badge]][version-link] ![MIT License][license-badge]
 
 
-此工具包旨在给AI工作者提供一把趁手的工具，尽量简化非核心的工作。
+此工具包旨在给AI工作者提供一把趁手的工具，尽量简化非核心的工作。\
 其中包含深度学习模型过程中可能会用到的一些工具，比如数据整理、格式转换、划分数据集等。
 
 因此也要注意，其中某些函数可能并没有提供过多自由度，如果需要，请自行修改。
